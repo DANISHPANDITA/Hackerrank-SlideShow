@@ -8,6 +8,7 @@ function Slides(props) {
       <div id="navigation" className="text-center">
         <button
           onClick={props.resetSlides}
+          disabled={index === 0}
           data-testid="button-restart"
           className="small outlined"
         >
