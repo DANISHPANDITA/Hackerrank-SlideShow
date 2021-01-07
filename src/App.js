@@ -6,7 +6,7 @@ import Slides from "./components/Slides";
 const title = "Slideshow App";
 
 function App() {
-  const Slides = (slides = [
+  const slides = [
     {
       title: "Today's workout plan",
       text: "We're gonna do 3 fundamental exercises.",
@@ -27,7 +27,7 @@ function App() {
       title: "Great job!",
       text: "You made it, have a nice day and see you next time!",
     },
-  ]);
+  ];
   const [index, setindex] = useState(0);
   const prevSlide = () => {
     setindex((index - 1) % slides.length);
@@ -47,8 +47,7 @@ function App() {
         nextSlide={nextSlide}
         resetSlides={resetSlides}
         slides={slides}
-        initialState={initialState}
-        index={state.index}
+        index={index}
       />
     </div>
   );
