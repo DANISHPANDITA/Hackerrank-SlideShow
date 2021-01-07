@@ -5,7 +5,7 @@ import "h8k-components";
 import Slides from "./components/Slides";
 const title = "Slideshow App";
 
-function App({ slides }) {
+function App() {
   const Slides = (slides = [
     {
       title: "Today's workout plan",
