@@ -1,7 +1,7 @@
 import React from "react";
 
 function Slides(props) {
-  const item = props.slides[this.props.index];
+  const item = props.slides[props.index];
   const index = props.index;
   return (
     <div>
